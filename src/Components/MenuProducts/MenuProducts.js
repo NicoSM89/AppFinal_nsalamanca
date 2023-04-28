@@ -55,7 +55,7 @@ const MenuProducts = () => {
         }}
       >
         <MenuItem>
-          <Link to="/products/cameras-mirrorless" style={styles.link}>
+          <Link to="/products/mirrorless" style={styles.link}>
             Mirrorless
           </Link>
         </MenuItem>

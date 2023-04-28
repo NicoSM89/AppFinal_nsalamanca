@@ -20,7 +20,7 @@ const styles = {
 const initialState = {
   name: "",
   lastName: "",
-  city: "",
+  email: "",
 };
 
 const Shop = () => {
@@ -63,10 +63,10 @@ const Shop = () => {
           onChange={onChange}
         />
         <TextField
-          placeholder="City"
+          placeholder="Email"
           style={{ margin: 10, width: 400 }}
-          name="city"
-          value={values.city}
+          name="email"
+          value={values.email}
           onChange={onChange}
         />
         <button className="btnASendAction" type="submit">

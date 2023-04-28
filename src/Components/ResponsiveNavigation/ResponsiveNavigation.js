@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { AppBar, Container, Toolbar } from "@mui/material";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 import MenuProducts from "../MenuProducts/MenuProducts";
 import { Link } from "react-router-dom";
 import "./ResponsiveNavigation.css";
@@ -38,6 +40,7 @@ const ResponsiveNavigation = () => {
             Contact
           </Link>
           <Link to="/shop" style={styles.linkButton}>
+            <ShoppingCartIcon />
             <i className="fa-solid fa-cart-shopping"></i>
             {items.length}
           </Link>

@@ -12,11 +12,11 @@ import CardAppComponent from "../../Components/CardAppComponent/CardAppComponent
 const ProductsPhoto = () => {
   const [productsData, setProductData] = useState([]);
 
-  let { Product } = useParams();
+  let { type } = useParams();
 
   useEffect(() => {
     const getProducts = async () => {
-      const q = query(collection(db, "products"), where("Product", "==", Product));
+      const q = query(collection(db, "products"), where("type", "==", type));
       const docs = [];
       const querySnapshot = await getDocs(q);
       // console.log('DATA:', querySnapshot);
@@ -28,7 +28,7 @@ const ProductsPhoto = () => {
       setProductData(docs);
     };
     getProducts();
-  }, [Product]);
+  }, [type]);
 
   return (
     <div
