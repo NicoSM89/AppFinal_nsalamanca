@@ -1,0 +1,20 @@
+.ResponsiveNavigation {
+	display: flex;
+	width: 100%;
+	background: rgb(108, 14, 14);
+	background: radial-gradient(
+		circle,
+		rgb(14, 80, 108) 77%,
+		rgb(31, 1, 96) 100%
+	);
+}
+
+.ResponsiveNavigationContainer {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.fa-cart-shopping {
+	margin-right: 5px;
+}
